@@ -22,6 +22,9 @@ import Airdrop from "./components/Airdrop";
 import SignMessage from "./components/SignMessage";
 import Navbar from "./components/Navbar";
 import SendTokens from "./components/SendTokens";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import Footer from "./components/Footer";
 
 const App = () => {
   
@@ -38,11 +41,13 @@ const App = () => {
             <Route path="/signMessage" element={<SignMessage />} />
             <Route path="/sendTokens" element={<SendTokens />} />
           </Routes>
+          <Footer />
         </Router>
           
 
         </WalletModalProvider>
       </WalletProvider>
+      <ToastContainer position="top-right" autoClose={3000}   />
     </ConnectionProvider>
   );
 };

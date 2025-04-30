@@ -20,7 +20,7 @@ const GetBalance = ({ balance, setBalance}) => {
   return (
     <div className='flex justify-center place-items-center gap-4'>
       <h1 className='text-2xl'>Wallet Balance : </h1>
-      <span className='text-[1rem] mt-1'>{connected && balance !== null ? `${balance.toFixed(2)} SOL` : "0 SOL"}</span>
+      <span className='text-[1.3rem] text-gray-500 font-semibold mt-1'>{connected && balance !== null ? `${balance.toFixed(2)} SOL` : "0 SOL"}</span>
     </div>
   )
 }

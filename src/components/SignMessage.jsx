@@ -2,17 +2,18 @@ import { ed25519 } from '@noble/curves/ed25519';
 import { useWallet } from '@solana/wallet-adapter-react';
 import bs58 from 'bs58';
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const SignMessage = () => {
     const { publicKey, signMessage } = useWallet();
 
     const handleSignMessage = async () => {
         if (!publicKey) {
-            throw new Error("Wallet is not connected");
+            toast.error("Wallet is not connected");
         }
 
         if (!signMessage) {
-            throw new Error("Wallet doesn't support sign message!");
+            toast.error("Wallet doesn't support sign message!");
         }
 
         const inputElement = document.getElementById('message');

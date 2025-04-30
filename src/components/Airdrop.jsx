@@ -7,6 +7,7 @@ import {
 } from "@solana/wallet-adapter-react-ui";
 import GetBalance from "./Getbalance";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 // The useWallet hooks allows to use the wallets variable inside the airdrop components
 function Airdrop() {
@@ -16,22 +17,22 @@ function Airdrop() {
 
   async function sendAirdropToUser() {
     if (!wallet.publicKey) {
-      alert("Connect your wallet first.");
+      toast("Connect your wallet first.");
       return;
     }
 
     try {
       const amount = document.getElementById("publicKey").value;
       await connection.requestAirdrop(wallet.publicKey, amount * 1000000000);
-      alert(`${amount} sol has been airdropped to your wallet`);
+      toast(`${amount} sol has been airdropped to your wallet`);
     } catch (error) {
       console.log("Airdrop failed", error);
-      alert("Airdrop Failed");
+      toast("Airdrop Failed");
     }
   }
 
   return (
-    <div className=" h-fit w-full">
+    <div className="  w-full">
       <div className="flex  gap-2 w-full justify-end p-3 ">
         <WalletMultiButton></WalletMultiButton>
         <WalletDisconnectButton></WalletDisconnectButton>
