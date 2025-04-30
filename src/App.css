@@ -1,0 +1,94 @@
+
+:root {
+
+ 
+    --primary: #118c4f;
+    
+    --background: #f5f8ff;
+    
+    }
+
+.header {
+    width: 100%;
+    height: 70px;
+    border: 1px solid gray;
+    background: transparent;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+   
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 100%;
+    
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    padding: 0 1rem;
+  
+}
+
+
+
+.nav-menu a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:740px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu li{
+        display: none;
+        visibility: hidden;
+    }
+
+    .btn {
+        width: 80%;
+        margin: .8rem;
+    }
+
+    .active {
+        position: absolute;
+        flex-direction: column;
+        top: 90px;
+        right:0;
+        width: 50%;
+        height: 200vh;
+        transition: 0.6s;
+        z-index: 2;
+        background: #fff;
+        border-left: 1px solid #eee;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .active li{
+        padding: 15px;
+        font-weight: 600;
+    }
+
+}
