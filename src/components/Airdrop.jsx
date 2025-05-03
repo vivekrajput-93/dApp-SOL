@@ -9,7 +9,7 @@ import GetBalance from "./Getbalance";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-// The useWallet hooks allows to use the wallets variable inside the airdrop components
+// The useWallet hooks allows to use the wallets variable inside the airdrop components.
 function Airdrop() {
   const wallet = useWallet();
   const { connection } = useConnection();

@@ -18,6 +18,10 @@ const SignMessage = () => {
 
         const inputElement = document.getElementById('message');
         const message = inputElement.value;
+        if(!message.trim()) {
+            toast.error("Please write the message !");
+            return;
+        }
         const encodedMessage = new TextEncoder().encode(message);
         const signature = await signMessage(encodedMessage);
 
