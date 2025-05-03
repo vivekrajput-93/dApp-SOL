@@ -1,12 +1,88 @@
-# React + Vite
+# 🔁 Solana Faucet - Token Sender
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web app that allows users to send SOL tokens on the Solana blockchain by connecting their wallet. Built using the Solana Wallet Adapter and `@solana/web3.js`.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Connect your Solana wallet (e.g., Phantom)
+- Send SOL to any wallet address
+- Message signing (optional feature)
+- Stylish UI using Tailwind CSS
 
-## Expanding the ESLint configuration
+## 📸 Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![screenshot](./screenshot.png) <!-- Optional: Add a screenshot if available -->
+
+## ⚙️ Tech Stack
+
+- React
+- Tailwind CSS
+- Solana Wallet Adapter
+- Solana Web3.js
+- bs58 (for base58 encoding)
+- noble-ed25519 (for message verification)
+
+## 🧠 Prerequisites
+
+- Node.js (v18+ recommended)
+- A Solana wallet like [Phantom](https://phantom.app/)
+- Basic knowledge of SOL transactions
+
+## 🛠️ Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/solana-faucet.git
+
+# Go into the project directory
+cd solana-faucet
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
+# 🔁 Solana Faucet - Token Sender
+
+A React-based web app that allows users to send SOL tokens on the Solana blockchain by connecting their wallet. Built using the Solana Wallet Adapter and `@solana/web3.js`.
+
+## 🚀 Features
+
+- Connect your Solana wallet (e.g., Phantom)
+- Send SOL to any wallet address
+- Message signing (optional feature)
+- Stylish UI using Tailwind CSS
+
+## 📸 Demo
+
+![screenshot](./screenshot.png) <!-- Optional: Add a screenshot if available -->
+
+## ⚙️ Tech Stack
+
+- React
+- Tailwind CSS
+- Solana Wallet Adapter
+- Solana Web3.js
+- bs58 (for base58 encoding)
+- noble-ed25519 (for message verification)
+
+## 🧠 Prerequisites
+
+- Node.js (v18+ recommended)
+- A Solana wallet like [Phantom](https://phantom.app/)
+- Basic knowledge of SOL transactions
+
+## 🛠️ Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/solana-faucet.git
+
+# Go into the project directory
+cd solana-faucet
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
